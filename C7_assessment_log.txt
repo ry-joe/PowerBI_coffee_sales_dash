@@ -1,0 +1,42 @@
+C7 Assessment Log
+
+1. Ingested the .xlsx file
+
+2. Cleaning and transformation:
+	a) customers table:
+		- removed irrelevant columns
+	b) products table:
+		- removed irrelevant columns
+		- formatted Unit Price and Unit Profit as currency
+	c) orders table:
+		- removed irrelevant columns
+		- created Sales and Profit columns using data from 
+		  the products table
+
+3. Created a dates table using CALENDARAUTO()
+	- generating a column of unique dates based on the dates 
+	  of the orders table
+
+4. Generate a semantic model:
+	- orders table as the fact table of the star schema
+	- customers, products and dates tables as dimension tables
+	- each connected via a one-to-many connection on the relevant keys
+
+5. Creating measures:
+	a) Total Profit
+	b) Total Sales
+	c) Total Sales Last Year (using SAMEPERIODASLASTYEAR())
+	d) Total Units Sold
+	e) Year-on-Year Sales Growth %
+
+6. Created a matrix visual tabulating the Year-on-Year Sales Growth
+
+7. Generate final report:
+	a) key metric cards - Total Profit, Total Sales and Total Units Sold
+	b) Total Sales vs Roast Type - column chart
+	c) Total Sales vs Country - pie chart
+	d) Total Sales vs Coffee Type - horizontal bar chart
+	e) Total Sales vs Loyalty Card - pie chart
+	f) Total Sales vs Month - line chart
+	g) slicers - to filter Country, Roast Type and Year 
+

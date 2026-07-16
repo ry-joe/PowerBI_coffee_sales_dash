@@ -1,0 +1,20 @@
+C7 Individual Task
+
+1. Ingest the data
+2. Clean and transform the data - removing irrelevant columns in 'customers' and 'orders'
+3. Create measures:
+	- Total Sales
+	- Total Profit
+	- Total Units Sold
+4. Create measure to compute Year-on-Year Sales Growth
+5. Show executive summary:
+	- Total Sales
+	- Total Profit
+	- Total Units Sold (Quantity Ordered)
+6. Show the following analysis:
+	- Sales Volume by Coffee Type
+	- Sales Volume by Roast Type
+	- Sales Volume by Country
+	- Sales Volume by Loyalty Card Holding
+7. Create chart to show monthly sales trend
+8. Use slicers for Year, Country and Roast Type
